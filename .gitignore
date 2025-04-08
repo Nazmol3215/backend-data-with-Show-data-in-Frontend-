@@ -1,0 +1,39 @@
+# node_modules ফোল্ডার ইগনোর করব
+node_modules/
+
+# লোগ ফাইলগুলো ইগনোর
+*.log
+
+# .env ফাইল (যেখানে সিক্রেট ইনফো থাকে)
+.env
+
+# build ফোল্ডার (React বা অন্য ফ্রেমওয়ার্কের আউটপুট)
+build/
+dist/
+
+# OS নির্দিষ্ট ফাইলগুলো
+.DS_Store
+Thumbs.db
+
+# IDE বা Editor এর ফাইল
+.vscode/
+.idea/
+
+# npm-debug ফাইল
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# coverage reports (test coverage এর জন্য)
+coverage/
+
+# eslint cache
+.eslintcache
+
+# production database (যদি local এ থাকে)
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
