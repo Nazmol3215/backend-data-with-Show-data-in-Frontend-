@@ -26,20 +26,23 @@ const AddListing = () => {
     }
   };
 
+ 
+
   return (
     <div style={{ padding: 20, maxWidth: 500, margin: 'auto' }}>
+     
       <h2>তালিকা যুক্ত করুন</h2>
       <form onSubmit={handleSubmit}>
-        <select name="type" value={form.type} onChange={handleChange}>
+        {/* <select name="type" value={form.type} onChange={handleChange}>
           <option value="land">জমি</option>
           <option value="house">বাসা</option>
           <option value="worker">মিস্ত্রি</option>
-        </select><br /><br />
-        <input name="title" placeholder="শিরোনাম" value={form.title} onChange={handleChange} /><br /><br />
-        <textarea name="description" placeholder="বর্ণনা" value={form.description} onChange={handleChange} /><br /><br />
-        <input name="location" placeholder="লোকেশন" value={form.location} onChange={handleChange} /><br /><br />
-        <input name="phone" placeholder="ফোন নম্বর" value={form.phone} onChange={handleChange} /><br /><br />
+        </select><br /><br /> */}
         <input name="image" placeholder="ছবির URL" value={form.image} onChange={handleChange} /><br /><br />
+        <input name="title" placeholder="নাম লিখুন" value={form.title} onChange={handleChange} /><br /><br />
+        <input name="phone" placeholder="নাম্বার লিখুন" value={form.phone} onChange={handleChange} /><br /><br />
+        <input name="location" placeholder="ধরন" value={form.location} onChange={handleChange} /><br /><br />
+        <textarea name="description" placeholder="ঠিকানা" value={form.description} onChange={handleChange} /><br /><br />
         <button type="submit">তালিকা যুক্ত করুন</button>
       </form>
     </div>

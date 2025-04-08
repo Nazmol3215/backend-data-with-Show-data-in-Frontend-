@@ -115,7 +115,7 @@ const Home = () => {
     <div style={containerStyle}>
       <h2 style={headingStyle}>🌟 তালিকাগুলো 🌟</h2>
       <button style={buttonStyle} onClick={handleNavigate}>
-        অন্য পেইজে যান 🚀
+        লিস্ট করার পেইজে যান 🚀
       </button>
 
 
@@ -126,11 +126,11 @@ const Home = () => {
           onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.02)')}
           onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
         >
-          <h3 style={titleStyle}>{item.title}</h3>
-          <p style={textStyle}>{item.description}</p>
-          <p style={textStyle}><strong>📍 লোকেশন:</strong> {item.location}</p>
-          <p style={textStyle}><strong>📞 ফোন:</strong> {item.phone}</p>
           {item.image && <img src={item.image} alt="listing" style={imageStyle} />}
+          <h3 style={titleStyle}>{item.title}</h3>
+          <p style={textStyle}><strong> 📞 নাম্বার:</strong> {item.location}</p>
+          <p style={textStyle}><strong>📍 ধরন:</strong> {item.phone}</p>
+          <p style={textStyle}> <strong> ঠিকানা </strong>  {item.description}</p>
         </div>
       ))}
 
